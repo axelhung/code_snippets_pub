@@ -16,7 +16,8 @@ public class sinkMain {
     // replace with your own API endpoint
     public static String test_data_url_infura = "https://mainnet.infura.io/v3/69696969696969696901730169abcdef" ;
     // replace with your own Tx to parse
-    public static String test_data_sz_transactionHash = "0x60fbd2080c1e4cb4ce9aecfda03d81fdde706c7a8153b71372bbea1f9d8f35b3" ;
+    public static String test_data_sz_transactionHash = "0x24009a297b20ee6668f7506a7c497b7bc6917bc387a197a2aa13a7db01022aef" ; // qik sample for USDC
+    public static String test_data_sz_transactionHash = "0x60fbd2080c1e4cb4ce9aecfda03d81fdde706c7a8153b71372bbea1f9d8f35b3" ; // qik sample for USDT
 
     static void cb_proc_tx( Transaction my_tx ) {
         String sz_contract_to_assert = sz_const_contract_USDT ;
