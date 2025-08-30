@@ -22,7 +22,7 @@ public class sinkMain {
         String sz_contract_to_assert = sz_const_contract_USDT ;
         String sz_Tx_to = my_tx.getTo() ;
         System.out.println("To : " + sz_Tx_to );
-        if ( ! sz_Tx_to.equalsIgnoreCase( sz_contract_to_assert ) ) { throw new RuntimeException("wrong tokenT"); }
+        if ( ! sz_Tx_to.equalsIgnoreCase( sz_contract_to_assert ) ) { throw new RuntimeException("wrong token"); }
     }
     public static void cb_proc_txRcpt( TransactionReceipt my_tx_rcpt ) {
         List<Log> logs = my_tx_rcpt.getLogs() ;
